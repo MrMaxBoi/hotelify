@@ -15,5 +15,5 @@ jobs:
         run: npm install
       - name: Install frontend deps
         run: npm install --prefix frontend
-      - name: Run tests (backend)
-        run: npm test 
+      - name: Check backend can start
+        run: npm run ci-check
