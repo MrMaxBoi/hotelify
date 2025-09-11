@@ -20,5 +20,3 @@ jobs:
         env:
           MONGO_URI: ${{ secrets.MONGO_URI }}
           PORT: 5050
-      - name: Debug env
-        run: echo "MONGO_URI is set? ${{ secrets.MONGO_URI != '' }}"
