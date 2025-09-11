@@ -15,5 +15,8 @@ jobs:
         run: npm install
       - name: Install frontend deps
         run: npm install --prefix frontend
-      - name: Check backend can start
+      - name: Run ci-check
         run: npm run ci-check
+        env:
+          MONGO_URI: ${{ secrets.MONGO_URI }}
+          PORT: 5050
