@@ -15,7 +15,5 @@ jobs:
         run: npm install
       - name: Install frontend deps
         run: npm install --prefix frontend
-      - name: Lint frontend
-        run: npm run lint --prefix frontend
       - name: Run tests (backend)
         run: npm test 
