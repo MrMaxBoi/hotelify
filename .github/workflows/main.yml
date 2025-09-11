@@ -1,0 +1,21 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install backend deps
+        run: npm install
+      - name: Install frontend deps
+        run: npm install --prefix frontend
+      - name: Lint frontend
+        run: npm run lint --prefix frontend
+      - name: Run tests (backend)
+        run: npm test 
