@@ -1,4 +1,4 @@
-# MERN Hotel
+# Hotelify
 
 A full-stack hotel management application built with the MERN stack (MongoDB, Express.js, React, Node.js).
 
