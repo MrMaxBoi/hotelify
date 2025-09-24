@@ -1,3 +1,4 @@
+// frontend/src/pages/CreatePage.jsx
 import { useState } from "react";
 import { Box, Button, Container, Heading, Input, useColorModeValue, useToast, VStack } from "@chakra-ui/react";
 import { useProductStore } from "../store/product";
