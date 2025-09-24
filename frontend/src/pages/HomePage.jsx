@@ -23,7 +23,7 @@ const HomePage = () => {
         bgGradient={"linear(to-r, cyan.400, blue.500)"}
         bgClip={"text"}
       >
-        Current Hotels 🏨
+        Current Hotels 🏨 
       </Text>
 
       <SimpleGrid
